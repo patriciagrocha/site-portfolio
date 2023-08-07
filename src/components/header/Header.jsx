@@ -1,3 +1,4 @@
+import { Button } from "../button/Button"
 import { HeaderStyled, ListStyled } from "./Header.styled"
 
 
@@ -30,7 +31,8 @@ function Header() {
             })
           }
         </ListStyled>    
-      </nav>    
+      </nav>  
+      <Button text={"Clica aqui"}/>
 
     </HeaderStyled>
   )
