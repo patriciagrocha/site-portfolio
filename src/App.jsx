@@ -1,18 +1,13 @@
-import { Footer } from "./components/footer/Footer"
-import { Header } from "./components/header/Header"
-import { Main } from "./components/main/Main"
 import "./global.css"
+import { BrowserRouter } from "react-router-dom"
+import { RoutesApp } from "./routes/Routes"
 
 function App() {
 
   return (
-    <>
-    <Header />
-    <Main>
-      <p>Olá</p>
-    </Main>
-    <Footer />
-    </>
+    <BrowserRouter>
+      <RoutesApp />      
+   </BrowserRouter>
   )
 }
 
