@@ -8,9 +8,6 @@ export const FooterStyled = styled.footer`
   justify-content: center;  
   flex-direction: column;
   gap: 1rem;
-  border-top: 1px solid #adacac;
-  position: fixed;
-  bottom: 0;
   background-color: #e8f8fa;
 
 `
@@ -18,4 +15,14 @@ export const IconStyled = styled.div`
   font-size: 1.5rem;
   display: flex;
   gap: 2rem;
+`
+export const HiperlinkStyled = styled.a`
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+
 `
