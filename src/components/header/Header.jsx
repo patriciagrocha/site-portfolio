@@ -1,5 +1,4 @@
-import { Button } from "../button/Button"
-import { HeaderStyled, ListStyled } from "./Header.styled"
+import { HeaderStyled, LinkStyled, NavStyled } from "./Header.styled";
 
 
 function Header() {
@@ -10,7 +9,7 @@ function Header() {
       description:"Home"
     },
     {
-      route:"/abouteMe",
+      route:"/aboutMe",
       description:"Sobre"
     },
     {
@@ -21,18 +20,19 @@ function Header() {
 
   return(
     <HeaderStyled>     
-      <nav>
-        <ListStyled>
+      
+        <NavStyled>
           {
             pages.map(({route, description}) => {
               return(
-                <li key={route}>{description}</li> 
+                <LinkStyled key={route} to={route} target="_blank">
+                  {description}
+                </LinkStyled> 
               )         
             })
           }
-        </ListStyled>    
-      </nav>  
-      <Button text={"Clica aqui"}/>
+        </NavStyled>    
+       
 
     </HeaderStyled>
   )
