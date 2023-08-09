@@ -57,7 +57,7 @@ export const ImgStyled = styled.div`
     border-radius: 50%;
     transform: translateY(0px);
     animation: float 8s linear infinite alternate;
-    } 
+   }
 
     @keyframes float {
     50% {
