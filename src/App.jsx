@@ -1,10 +1,13 @@
+import "./global.css"
+import { BrowserRouter } from "react-router-dom"
+import { RoutesApp } from "./routes/Routes"
 
 function App() {
 
   return (
-    <>
-    <h1>Patrícia Rocha</h1>
-    </>
+    <BrowserRouter>
+      <RoutesApp />      
+   </BrowserRouter>
   )
 }
 
